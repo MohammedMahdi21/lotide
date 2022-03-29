@@ -13,5 +13,3 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual(head([]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
