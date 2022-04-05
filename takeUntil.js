@@ -7,6 +7,7 @@ const takeUntil = function(array, callback) {
       return result;
     }
   }
+  return result
 };
 
 
@@ -37,13 +38,13 @@ const eqArrays = function(actual, expected) {
 };
 
 
-//const data = [1, 2, 5, 7, 2, 0, 2, -1, 4, 5];
-//const results = takeUntil(data, x => x < 0);
-//assertArraysEqual(results, [1, 2, 5, 7, 2, 0, 2]);
-//
-//
-//console.log('---');
-//
-//const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
-//const results2 = takeUntil(data2, x => x === ',');
-//assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood' ]);
+const data = [1, 2, 5, 7, 2, 0, 2, -1, 4, 5];
+const results = takeUntil(data, x => x < 0);
+assertArraysEqual(results, [1, 2, 5, 7, 2, 0, 2]);
+
+
+console.log('---');
+
+const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+const results2 = takeUntil(data2, x => x === ',');
+assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood' ]);
