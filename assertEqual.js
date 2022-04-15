@@ -1,8 +1,11 @@
 const assertEqual = function(actual, expected) {
   if (expected === actual) {
-    console.log(`👍🏼👍🏼👍🏼 ${actual} === expected`);
+    console.log(`👍🏼👍🏼👍🏼 the actual: ${actual} === the expected: ${expected}`);
   } else {
-    console.log(`⛔️⛔️⛔️ ${actual} !== expected`);
+    console.log(`⛔️⛔️⛔️ the actual: ${actual} !== the expected: ${expected}`);
   }
 };
 
+
+
+module.exports = assertEqual;
