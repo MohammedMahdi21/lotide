@@ -1,15 +1,16 @@
+const assertEqual = require('./assertEqual')
+
 const head = function(array) {
 
-  return array.slice(0, 1);
+  return array[0];
 };
 
+module.exports = head;
 
 
-const assertEqual = function(actual, expected) {
-  if (expected === actual[0]) {
-    console.log(`👍🏼👍🏼👍🏼 ${actual} === expected`);
-  } else {
-    console.log(`⛔️⛔️⛔️ ${actual} !== expected`);
-  }
-};
+
+
+
+
+
 
