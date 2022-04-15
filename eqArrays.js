@@ -1,4 +1,3 @@
-const assertEqual = require('./assertEqual');
 
 const eqArrays = function(actual, expected) {
 
@@ -18,8 +17,6 @@ const eqArrays = function(actual, expected) {
 
 };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], ["Hello"]), false);
 
 module.exports = eqArrays;
 
