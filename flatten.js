@@ -35,4 +35,5 @@ const flatten = function(arrayToFlatten) {
   console.log(flattened);
 };
 
+module.exports = flatten;
 

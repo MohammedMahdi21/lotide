@@ -29,3 +29,8 @@ The following functions are currently implemented:
 * `head`: retrun the first element in array
 * `tail`: return an array without the first element
 * `middle`: return the middle element in an array
+* `map`: map function
+* `letterPositions`: return the positions of element in an object
+* `flatten`: flatten function
+* `findKeyByValue`: findKeyByValue function
+* `findKey`: findKey function

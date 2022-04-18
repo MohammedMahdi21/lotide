@@ -19,3 +19,4 @@ const findKeyByValue = function(obj, objValue) {
 };
 
 
+module.exports = findKeyByValue;
