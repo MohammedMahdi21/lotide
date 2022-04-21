@@ -8,34 +8,27 @@ const assertArraysEqual = function(actual, expected) {
 
 
 const eqArrays = function(actual, expected) {
-  let j = 0;
-
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] === expected[j]) {
-      j++;
-    } else {
-      return false;
+  if (actual.length !== expected.length) {
+    return false;
+  } else {
+    for (let i = 0; i < actual.length; i++) {
+      if (actual[i] !== expected[i]) {
+        return false;
+      }
     }
-
-  } return true;
-
+  }
+  return true;
 };
 
 const without = function(source, itemsToRemove) {
-  //console.log(source);
-  //console.log(itemsToRemove);
   const filteredArray = source;
-
-  console.log(filteredArray);
   for (let i = 0; i < itemsToRemove.length; i++) {
     for (let j = 0; j < source.length; j++) {
       if (itemsToRemove[i] === source[j]) {
         filteredArray.splice(j, 1);
-
       }
     }
 
   }
-  
+  return filteredArray
 };
-
