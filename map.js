@@ -7,7 +7,6 @@ const map = function(array, callback) {
   return results;
 };
 
-
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`👍🏼👍🏼👍🏼 PASSED , Array 1 = Array 2`);
@@ -16,25 +15,20 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-
 const eqArrays = function(actual, expected) {
 
   if (actual.length !== expected.length) {
-
     return false;
   } else {
     for (let i = 0; i < actual.length; i++) {
       if (actual[i] !== expected[i]) {
         return false;
       }
-
     }
   }
   return true;
 
 };
-
-
 
 const words = ["ground", "control", "to", "major", "tom"];
 const results1 = map(words, word => word[0]);

@@ -1,4 +1,3 @@
-
 const eqArrays = function(actual, expected) {
 
   if (actual.length !== expected.length) {
@@ -16,7 +15,6 @@ const eqArrays = function(actual, expected) {
   return true;
 
 };
-
 
 module.exports = eqArrays;
 

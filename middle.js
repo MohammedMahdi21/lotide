@@ -12,11 +12,8 @@ const middle = function(array) {
     counter = Math.floor(array.length / 2);
     middleElement.push(array[counter]);
   }
-
-
   return middleElement;
 };
-
 
 module.exports = middle;
 

@@ -1,15 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (expected === actual) {
-    console.log(`👍🏼👍🏼👍🏼 ${actual} === expected`);
-  } else {
-    console.log(`⛔️⛔️⛔️ ${actual} !== expected`);
-  }
-};
-
-
-
 const countLetters = function(sentence) {
-  //const letterss = sentence.replaceAll(" ", "");
+
   const letters = "abcdefghijklmnnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let counter = {};
   for (const letter of sentence) {
