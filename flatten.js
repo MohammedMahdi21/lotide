@@ -28,7 +28,7 @@ const flatten = function(arrayToFlatten) {
       flattened.push(item);
     }
   }
-  console.log(flattened);
+ return flattened;
 };
 
 module.exports = flatten;
