@@ -21,14 +21,18 @@ const eqArrays = function(actual, expected) {
 };
 
 const without = function(source, itemsToRemove) {
-  const filteredArray = source;
+  const filteredArray = source.concat();
   for (let i = 0; i < itemsToRemove.length; i++) {
-    for (let j = 0; j < source.length; j++) {
-      if (itemsToRemove[i] === source[j]) {
+    const itemToRemove = itemsToRemove[i];
+    for (let j = filteredArray.length - 1; j >= 0; j--) {
+      const sourceToCheck = filteredArray[j];
+      if (itemToRemove === sourceToCheck) {
         filteredArray.splice(j, 1);
       }
     }
 
   }
-  return filteredArray
+  return filteredArray;
 };
+
+console.log(without(["1", "1", "1", "2", "3", "1" , "1"], ["1", 2, "3"]));
