@@ -6,7 +6,6 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-
 const eqArrays = function(actual, expected) {
   if (actual.length !== expected.length) {
     return false;
@@ -35,4 +34,4 @@ const without = function(source, itemsToRemove) {
   return filteredArray;
 };
 
-console.log(without(["1", "1", "1", "2", "3", "1" , "1"], ["1", 2, "3"]));
+without(["1", "1", "1", "2", "3", "1" , "1"], ["1", 2, "3"]);
